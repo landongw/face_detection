@@ -7,10 +7,10 @@ import sys
 sys.path.append('/usr/local/Cellar/opencv/3.3.1_1/lib/python3.6/site-packages')
 import cv2
 
-face_cascade = cv2.CascadeClassifier('/Users/landonwiedenman/Documents/lc101/hacker-problems/card_recognition/face_detection/haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('/Users/landonwiedenman/Documents/lc101/hacker-problems/card_recognition/face_detection/haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('/Users/landonwiedenman/Documents/development_projects/landongw/face_detection/haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier('/Users/landonwiedenman/Documents/development_projects/landongw/face_detection/haarcascade_eye.xml')
 
-img = cv2.imread('/Users/landonwiedenman/Documents/lc101/hacker-problems/card_recognition/images/people.jpg')
+img = cv2.imread('/Users/landonwiedenman/Documents/development_projects/landongw/face_detection/images/6186697.png')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 faces = face_cascade.detectMultiScale(gray, 1.3, 5)
